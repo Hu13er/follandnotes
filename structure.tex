@@ -17,6 +17,8 @@
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{tikz} % Required for drawing custom shapes
 \definecolor[named]{color01}{rgb}{.2,.4,.6} % Color used in the title page
+\usepackage{textgreek} % Required for writing greek letters in text mode
+\usepackage{todonotes} % Required for marking todoes
 
 \usepackage[unicode=true,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]{hyperref}
 
@@ -32,16 +34,20 @@
 \newtheorem*{lemma*}{Lemma}
 \newtheorem*{corollary*}{Corollary}
 
+\newtheorem{solution}{Solution}%[chapter]
+\counterwithin{solution}{section}
+
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{model}[theorem]{Model}
 \newtheorem{remark}[theorem]{Remark}
 \counterwithin{Exercise}{chapter}
+\newtheorem*{note}{Note}
 
 
 % shorthand data macros
 
-\newcommand{\webpageurl}{\url{pimbook.org}}
+\newcommand{\webpageurl}{\url{github.com/Hu13er/follandnotes}}
 \newcommand{\footnoteurl}[1]{{\tiny \url{#1}}}
 
 % Math operators
@@ -110,7 +116,7 @@
 \raggedright{}
 \LARGE{##1}}
 \renewcommand{\afterchaptertitle}{
-\vskip3.5\onelineskip{}
+\vskip1.5\onelineskip{}
 }}
 \chapterstyle{Tufte} % Set the chapter style to the custom style defined above
 

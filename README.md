@@ -1,7 +1,8 @@
-# Book Template
+# Notes on Real Analysis G. B. Folland
 
-This LaTeX template contains the rough structure of my book, [A Programmer's
-Introduction to Mathematics](https://pimbook.org).
+## Book Template
+
+This text uses Latex template of book [A Programmer's Introduction to Mathematics](https://pimbook.org).
 
 ## Compiling
 
@@ -16,7 +17,7 @@ $pdf_previewer = "open -a /Applications/Skim.app";
 $clean_ext = "paux lox pdfsync out";
 ```
 
-# File structure
+## File structure
 
 ```
 .
@@ -24,12 +25,10 @@ $clean_ext = "paux lox pdfsync out";
 ├── book.tex
 ├── chapters
 │   ├── chapter_template.tex
-│   ├── culture.tex
-│   └── introduction.tex
+│   ├── measures.tex
+│   └── ...
 ├── copyright.tex
-├── dedication.tex
 ├── structure.tex
-├── thanks.tex
 └── titlepage.tex
 ```
 
